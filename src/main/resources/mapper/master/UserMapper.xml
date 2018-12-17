@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.littleWeekend.dao.master.UserDao">
+
+
+	<select id="findByName" resultType="com.littleWeekend.domain.User"  parameterType="java.lang.String">
+		select a.payOrderId from IntOrderPay a where a.orderid='I540885358527702' ;
+	</select>
+
+</mapper>

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.fastjson.JSONObject;
-import com.huoli.skydata.beans.City;
+import com.littleWeekend.domain.City;
 import com.littleWeekend.domain.common.CodeMsgResp;
 import com.littleWeekend.service.UserService;
 
@@ -33,7 +33,7 @@ public class TestController {
     @RequestMapping(value = "/junting", method = RequestMethod.GET)
     public String junting(@RequestParam(value = "userName", required = true) String userName) {
     	City city=new City();
-    	city.setName(userName);
+    	city.setCityName(userName);
         return JSONObject.toJSONString(city);
     }
     

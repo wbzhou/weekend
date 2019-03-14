@@ -7,8 +7,8 @@ import com.alibaba.fastjson.JSONObject;
 import com.littleWeekend.util.HttpTookit;
 
 /**
-@author :zhouwenbin
-@time   :2018年12月15日
+@author :cathy
+@time   :2018年01月15日
 @comment:
 **/
 public class TestMain {

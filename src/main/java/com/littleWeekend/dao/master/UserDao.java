@@ -1,6 +1,7 @@
 package com.littleWeekend.dao.master;
 
 
+import com.littleWeekend.domain.User;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -11,10 +12,10 @@ import org.apache.ibatis.annotations.Mapper;
 public interface UserDao {
 
     /**
-     * 根据用户名获取用户信息
      *
-     * @param userName
+     *
+     *
      * @return
      */
-    String findByName(String userName);
+    User findByActivityId(String activityId);
 }

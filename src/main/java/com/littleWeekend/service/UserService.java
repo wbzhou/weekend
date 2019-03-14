@@ -1,6 +1,8 @@
 package com.littleWeekend.service;
 
 
+import com.littleWeekend.domain.User;
+
 /**
  * 用户业务接口层
  *
@@ -8,10 +10,12 @@ package com.littleWeekend.service;
 public interface UserService {
 
     /**
-     * 根据用户名获取用户信息，包括从库的地址信息
+     * 根据活动号获取活动名称，包括从库的地址信息
      *
-     * @param userName
+     * @param activityId
      * @return
      */
-    String findByName(String userName);
+    User findByActivityId(String activityId);
+
+    String checkActivity(String activityId);
 }

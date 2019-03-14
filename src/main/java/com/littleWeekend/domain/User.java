@@ -21,8 +21,19 @@ public class User {
      * 描述
      */
     private String description;
+    private String activityName;
+
 
     private City city;
+
+    public String getActivityName() {
+        return activityName;
+    }
+
+    public void setActivityName(String activityName) {
+        this.activityName = activityName;
+    }
+
 
     public City getCity() {
         return city;

@@ -70,5 +70,11 @@ public class UserServiceImpl implements UserService {
 
     }
 
+    @Override
+    public String checkUse(){
+        return "这个是用于testNg的哈,说明testNg可以调用到service里";
+    }
+
+
 }
 

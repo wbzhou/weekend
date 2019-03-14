@@ -18,4 +18,5 @@ public interface UserService {
     User findByActivityId(String activityId);
 
     String checkActivity(String activityId);
+    String checkUse();
 }

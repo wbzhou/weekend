@@ -24,6 +24,6 @@ nbdist/
 .nb-gradle/
 logs/
 
-src/test/
+#src/test/
 src/test/java/ITest.java
 

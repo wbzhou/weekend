@@ -19,4 +19,6 @@ public interface UserService {
 
     String checkActivity(String activityId);
     String checkUse();
+//    String checkIntegral();
+
 }

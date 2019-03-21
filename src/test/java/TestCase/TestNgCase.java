@@ -1,4 +1,4 @@
-package com.weekend.littleWeekend;
+package TestCase;
 
 import com.littleWeekend.Application;
 import com.littleWeekend.service.UserService;
@@ -9,11 +9,6 @@ import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-/**
- * @author cathy
- *  classes需要注入的类
- * @description
- */
 
 @SpringBootTest(classes = { Application.class })
 //@DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_CLASS)
@@ -36,5 +31,10 @@ public class TestNgCase extends AbstractTestNGSpringContextTests {
     @Test(groups = "gOneTwo")
     public void test3(int a , int b){
         System.out.println("这里的分组信息:"+a+b);
+    }
+
+    @Test(groups = "interface1")
+    public void testActivity(){
+        userService.checkActivity("1D4URKI31EK3IT0AB2M103FPAH0012KH");
     }
 }

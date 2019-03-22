@@ -1,7 +1,7 @@
 package com.littleWeekend.dao.master;
 
 
-import com.littleWeekend.domain.User;
+import com.littleWeekend.domain.Activity;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Mapper;
  *
  */
 @Mapper
-public interface UserDao {
+public interface ActivityDao {
 
     /**
      *
@@ -17,5 +17,5 @@ public interface UserDao {
      *
      * @return
      */
-    User findByActivityId(String activityId);
+    Activity findByActivityId(String activityId);
 }

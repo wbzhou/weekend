@@ -17,11 +17,15 @@
                 <include name="gOne"/>
                 <include name="gTwo"/>
             </define>
+            <define name="interface1" >
+                <include name="interface1"/>
+            </define>
 
             <run>
-                <include name="gOne"/>
-                <!--<include name="gTwo"/>-->
+                <!--<include name="gOne"/>-->
+                <include name="gTwo"/>
                 <!--<include name="eatOneTen"/>-->
+                <include name="interface1"/>
             </run>
         </groups>
 

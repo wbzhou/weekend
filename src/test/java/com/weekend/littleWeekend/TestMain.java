@@ -6,11 +6,7 @@ import java.util.Map;
 import com.alibaba.fastjson.JSONObject;
 import com.littleWeekend.util.HttpTookit;
 
-/**
-@author :cathy
-@time   :2018年01月15日
-@comment:
-**/
+
 public class TestMain {
 
 	/**

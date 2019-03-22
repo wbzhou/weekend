@@ -1,24 +1,19 @@
 package com.littleWeekend.controller;
 
 
-import com.littleWeekend.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.alibaba.fastjson.JSONObject;
-import com.littleWeekend.domain.City;
-import com.littleWeekend.domain.common.CodeMsgResp;
-import com.littleWeekend.service.UserService;
+import com.littleWeekend.service.IActivityService;
 
 @RestController
 public class TestController {
 
     @Autowired
-    private UserService userService;
+    private IActivityService IActivityService;
 
     /**
      * 根据用户名获取用户信息，包括从库的地址信息
@@ -28,7 +23,7 @@ public class TestController {
      */
     @RequestMapping(value = "/api/user", method = RequestMethod.GET)
     public String findByActivityId(@RequestParam(value = "activityId", required = true) String activityId) {
-        return userService.checkActivity(activityId);
+        return IActivityService.checkActivity(activityId);
     }
     
 //    @RequestMapping(value = "/junting", method = RequestMethod.GET)

@@ -5,7 +5,7 @@ package com.littleWeekend.domain;
  * 用户实体类
  *
  */
-public class User {
+public class Activity {
 
     /**
      * 城市编号

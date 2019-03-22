@@ -113,7 +113,7 @@ public final class HttpTookit
 			}
 
 			method.setFollowRedirects(true);
-			method.setRequestHeader("User-Agent",
+			method.setRequestHeader("Activity-Agent",
 					"Mozilla/4.0 (compatible; MSIE 6.0; Windows 2000)");
 			client.getHttpConnectionManager().getParams()
 					.setConnectionTimeout(5000);
@@ -234,7 +234,7 @@ public final class HttpTookit
 		// get.addRequestHeader("Accept-Encoding","gzip, deflate");
 		get.addRequestHeader("Accept-Language", "zh-CN");
 		get.addRequestHeader("Connection", "Keep-Alive");
-		get.addRequestHeader("User-Agent",
+		get.addRequestHeader("Activity-Agent",
 				"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)");
 		// get.addRequestHeader("Content-Type",
 		// "application/x-www-form-urlencoded;charset=UTF-8");
@@ -334,7 +334,7 @@ public final class HttpTookit
 		get.addRequestHeader("Referer", ref);
 		get.addRequestHeader("Accept-Language", "zh-CN");
 		get.addRequestHeader("Connection", "Keep-Alive");
-		get.addRequestHeader("User-Agent",
+		get.addRequestHeader("Activity-Agent",
 				"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)");
 		// get.addRequestHeader("Content-Type",
 		// "application/x-www-form-urlencoded;charset=UTF-8");
@@ -1260,7 +1260,7 @@ public final class HttpTookit
  		get.addRequestHeader("Accept-Encoding","gzip, deflate");
  		get.addRequestHeader("Accept-Language","zh-CN");
  		get.addRequestHeader("Connection","Keep-Alive");
- 		get.addRequestHeader("User-Agent","Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)");
+ 		get.addRequestHeader("Activity-Agent","Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)");
  		get.addRequestHeader("Content-Type",
 					"application/x-www-form-urlencoded;charset=UTF-8");
  		HttpClient httpClient = new HttpClient();

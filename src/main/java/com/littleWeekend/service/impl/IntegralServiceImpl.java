@@ -29,7 +29,7 @@ public class IntegralServiceImpl {
         Map<String,String> params =new HashMap<>();
         params.put("billId","97AFD58BFF44E9D70CCBFD219EFD7F0A");
         params.put("moblie","15110262561");
-        //IntegralServiceImpl integralService;
+
 
         String signKeyValue= EncriptMD5.MD5("15110262561GAG20181114LH");
         params.put("signKey",signKeyValue);

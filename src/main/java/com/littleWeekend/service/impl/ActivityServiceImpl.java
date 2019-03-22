@@ -64,22 +64,24 @@ public class ActivityServiceImpl implements IActivityService {
         Activity activity = activityDao.findByActivityId(activityId);
         //String expRes =use.getActivityName();
         String expRes = "";
-        if(activity != null){
-             expRes =activity.getActivityName();
-//        User use = .findByActivityId(activityId);
-        //String expRes =use.getActivityName();
-//        if (use != null) {
-//            expRes = use.getActivityName();
-//        }
-
-        String remsg = "";
-        if (activityName.equals(expRes)) {
-            remsg = "查到活动详情";
-        } else {
-            remsg = "活动不存在";
+        if (activity != null) {
+            expRes = activity.getActivityName();
+            Activity use = activityDao.findByActivityId(activityId);
+//            String expRes =use.getActivityName();
+        if (use != null) {
+            expRes = use.getActivityName();
         }
-        return remsg;
 
+            String remsg = "";
+            if (activityName.equals(expRes)) {
+                remsg = "查到活动详情";
+            } else {
+                remsg = "活动不存在";
+            }
+            return remsg;
+
+        }
+        return expRes;
     }
 
 //    @Override

@@ -1,4 +1,4 @@
-package com.weekend.littleWeekend;
+package TestCase;
 
 import com.littleWeekend.Application;
 import com.littleWeekend.service.IActivityService;
@@ -7,7 +7,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 
 
 @SpringBootTest(classes = { Application.class })
@@ -33,9 +32,10 @@ public class TestNgCase extends AbstractTestNGSpringContextTests {
         System.out.println("这里的分组信息:"+a+b);
     }
 
-    @Test(groups="interface1")
-    public void testActivity(){
-        String res= IActivityService.checkActivity("123");
-        System.out.println("测试结果:"+res);
+    @Test(groups = "interface1")
+    public void testActivity(){String res = IActivityService.checkActivity("123");
+        System.out.println("测试结果:" + res);
+        System.out.println("测试结果:" + res);
+//        userService.checkActivity("1D4URKI31EK3IT0AB2M103FPAH0012KH");
     }
 }

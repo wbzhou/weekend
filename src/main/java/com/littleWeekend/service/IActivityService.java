@@ -19,4 +19,6 @@ public interface IActivityService {
 
     String checkActivity(String activityId);
     String checkUse();
+//    String checkIntegral();
+
 }

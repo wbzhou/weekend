@@ -43,9 +43,14 @@ public class ActivityServiceImpl implements IActivityService {
 
     @Override
     public String checkActivity(String activityId) {
+
+
+
+
         String url = "http://g.be.test.goago.cn/activity/getActivityById.do";
         Map<String, String> params = new HashMap<String, String>();
-        params.put("activityId", "1D4URKI31EK3IT0AB2M103FPAH0012KH");
+//        params.put("activityId", "1D4URKI31EK3IT0AB2M103FPAH0012KH");
+        params.put("activityId", activityId);
         //String postBodyJsonStr = JSONObject.toJSONString(params);
         String sendPostByJsonRes = HttpTookit.sendPost(url, params);
         System.out.println("json请求返回：" + sendPostByJsonRes);
